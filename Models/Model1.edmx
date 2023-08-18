@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="yilmazoglugroupDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="About_tbl">
+          <Key>
+            <PropertyRef Name="About_ID" />
+          </Key>
+          <Property Name="About_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="About_WhoAreWe" Type="varchar(max)" />
+          <Property Name="About_WhoAreWe_Two" Type="varchar(max)" />
+          <Property Name="About_Content" Type="varchar(max)" />
+          <Property Name="About_Content_Two" Type="varchar(max)" />
+          <Property Name="About_Mission" Type="varchar(max)" />
+          <Property Name="About_Mission_Two" Type="varchar(max)" />
+          <Property Name="About_Vision" Type="varchar(max)" />
+          <Property Name="About_Vision_Two" Type="varchar(max)" />
+          <Property Name="About_Career" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="AltSlider_tbl">
+          <Key>
+            <PropertyRef Name="AltSlider_ID" />
+          </Key>
+          <Property Name="AltSlider_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AltSlider_Service_ID" Type="int" />
+          <Property Name="AltSlider_Project_ID" Type="int" />
+          <Property Name="AltSlider_Path" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="Brands_tbl">
+          <Key>
+            <PropertyRef Name="Brand_ID" />
+          </Key>
+          <Property Name="Brand_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Brand_Content" Type="varchar(max)" />
+          <Property Name="Brand_Content_Two" Type="varchar(max)" />
+          <Property Name="Brand_Image" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="Cv_tbl">
+          <Key>
+            <PropertyRef Name="Cv_ID" />
+          </Key>
+          <Property Name="Cv_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Cv_Path" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="Login_tbl">
+          <Key>
+            <PropertyRef Name="Login_ID" />
+          </Key>
+          <Property Name="Login_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Login_Name" Type="varchar(max)" />
+          <Property Name="Login_Password" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="News_tbl">
+          <Key>
+            <PropertyRef Name="Blog_ID" />
+          </Key>
+          <Property Name="Blog_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Blog_Image" Type="varchar(max)" />
+          <Property Name="Blog_Summary" Type="varchar(max)" />
+          <Property Name="Blog_Summary_Two" Type="varchar(max)" />
+          <Property Name="Blog_Content" Type="varchar(max)" />
+          <Property Name="Blog_Content_Two" Type="varchar(max)" />
+          <Property Name="Blog_Header" Type="varchar(max)" />
+          <Property Name="Blog_Header_Two" Type="varchar(max)" />
+          <Property Name="Blog_AddDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Projects_tbl">
+          <Key>
+            <PropertyRef Name="Project_ID" />
+          </Key>
+          <Property Name="Project_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Project_Image" Type="varchar(max)" />
+          <Property Name="Project_Content" Type="varchar(max)" />
+          <Property Name="Project_Content_Two" Type="varchar(max)" />
+          <Property Name="Project_Summary" Type="varchar(max)" />
+          <Property Name="Project_Summary_Two" Type="varchar(max)" />
+          <Property Name="Project_Statu" Type="int" />
+          <Property Name="Project_Country" Type="varchar(max)" />
+          <Property Name="Project_City" Type="varchar(max)" />
+          <Property Name="Project_Sector" Type="varchar(max)" />
+          <Property Name="Project_StartDate" Type="datetime" />
+          <Property Name="Project_EndDate" Type="datetime" />
+          <Property Name="Project_Situation" Type="int" />
+          <Property Name="Project_Header" Type="varchar(max)" />
+          <Property Name="Project_Header_Two" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="Services_tbl">
+          <Key>
+            <PropertyRef Name="Service_ID" />
+          </Key>
+          <Property Name="Service_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Service_Image" Type="varchar(max)" />
+          <Property Name="Service_Summary" Type="varchar(max)" />
+          <Property Name="Service_Summary_Two" Type="varchar(max)" />
+          <Property Name="Service_Content" Type="varchar(max)" />
+          <Property Name="Service_Content_Two" Type="varchar(max)" />
+          <Property Name="Service_Header" Type="varchar(max)" />
+          <Property Name="Service_Header_Two" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="Settings_tbl">
+          <Key>
+            <PropertyRef Name="Settings_ID" />
+          </Key>
+          <Property Name="Settings_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Settings_Address" Type="varchar(max)" />
+          <Property Name="Settings_Phone" Type="varchar(max)" />
+          <Property Name="Settings_Phone_Mobile" Type="varchar(max)" />
+          <Property Name="Settings_Mail" Type="varchar(max)" />
+          <Property Name="Settings_Facebook" Type="varchar(max)" />
+          <Property Name="Settings_Twitter" Type="varchar(max)" />
+          <Property Name="Settings_Instagram" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="Sliders_tbl">
+          <Key>
+            <PropertyRef Name="Slider_ID" />
+          </Key>
+          <Property Name="Slider_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Slider_Service_ID" Type="int" />
+          <Property Name="Slider_Path" Type="varchar(max)" />
+        </EntityType>
+        <EntityContainer Name="yilmazoglugroupDBModelStoreContainer">
+          <EntitySet Name="About_tbl" EntityType="Self.About_tbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AltSlider_tbl" EntityType="Self.AltSlider_tbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Brands_tbl" EntityType="Self.Brands_tbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Cv_tbl" EntityType="Self.Cv_tbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Login_tbl" EntityType="Self.Login_tbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="News_tbl" EntityType="Self.News_tbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Projects_tbl" EntityType="Self.Projects_tbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Services_tbl" EntityType="Self.Services_tbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Settings_tbl" EntityType="Self.Settings_tbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sliders_tbl" EntityType="Self.Sliders_tbl" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="yilmazoglugroupDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="About_tbl">
+          <Key>
+            <PropertyRef Name="About_ID" />
+          </Key>
+          <Property Name="About_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="About_WhoAreWe" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="About_WhoAreWe_Two" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="About_Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="About_Content_Two" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="About_Mission" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="About_Mission_Two" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="About_Vision" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="About_Vision_Two" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="About_Career" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Projects_tbl">
+          <Key>
+            <PropertyRef Name="Project_ID" />
+          </Key>
+          <Property Name="Project_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Project_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Project_Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Project_Content_Two" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Project_Summary" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Project_Summary_Two" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Project_Statu" Type="Int32" />
+          <Property Name="Project_Country" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Project_City" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Project_Sector" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Project_StartDate" Type="DateTime" Precision="3" />
+          <Property Name="Project_EndDate" Type="DateTime" Precision="3" />
+          <Property Name="Project_Situation" Type="Int32" />
+          <Property Name="Project_Header" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Project_Header_Two" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Services_tbl">
+          <Key>
+            <PropertyRef Name="Service_ID" />
+          </Key>
+          <Property Name="Service_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Service_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Service_Summary" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Service_Summary_Two" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Service_Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Service_Content_Two" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Service_Header" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Service_Header_Two" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="yilmazoglugroupDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="About_tbl" EntityType="Self.About_tbl" />
+          <EntitySet Name="Projects_tbl" EntityType="Self.Projects_tbl" />
+          <EntitySet Name="Services_tbl" EntityType="Self.Services_tbl" />
+          <EntitySet Name="News_tbl" EntityType="yilmazoglugroupDBModel.News_tbl" />
+          <EntitySet Name="Brands_tbl" EntityType="yilmazoglugroupDBModel.Brands_tbl" />
+          <EntitySet Name="AltSlider_tbl" EntityType="yilmazoglugroupDBModel.AltSlider_tbl" />
+          <EntitySet Name="Sliders_tbl" EntityType="yilmazoglugroupDBModel.Sliders_tbl" />
+          <EntitySet Name="Cv_tbl" EntityType="yilmazoglugroupDBModel.Cv_tbl" />
+          <EntitySet Name="Settings_tbl" EntityType="yilmazoglugroupDBModel.Settings_tbl" />
+          <EntitySet Name="Login_tbl" EntityType="yilmazoglugroupDBModel.Login_tbl" />
+        </EntityContainer>
+        <EntityType Name="News_tbl">
+          <Key>
+            <PropertyRef Name="Blog_ID" />
+          </Key>
+          <Property Name="Blog_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Blog_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Blog_Summary" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Blog_Summary_Two" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Blog_Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Blog_Content_Two" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Blog_Header" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Blog_Header_Two" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Blog_AddDate" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Brands_tbl">
+          <Key>
+            <PropertyRef Name="Brand_ID" />
+          </Key>
+          <Property Name="Brand_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Brand_Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Brand_Content_Two" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Brand_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="AltSlider_tbl">
+          <Key>
+            <PropertyRef Name="AltSlider_ID" />
+          </Key>
+          <Property Name="AltSlider_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AltSlider_Service_ID" Type="Int32" />
+          <Property Name="AltSlider_Project_ID" Type="Int32" />
+          <Property Name="AltSlider_Path" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Sliders_tbl">
+          <Key>
+            <PropertyRef Name="Slider_ID" />
+          </Key>
+          <Property Name="Slider_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Slider_Service_ID" Type="Int32" />
+          <Property Name="Slider_Path" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Cv_tbl">
+          <Key>
+            <PropertyRef Name="Cv_ID" />
+          </Key>
+          <Property Name="Cv_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Cv_Path" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Settings_tbl">
+          <Key>
+            <PropertyRef Name="Settings_ID" />
+          </Key>
+          <Property Name="Settings_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Settings_Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Settings_Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Settings_Phone_Mobile" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Settings_Mail" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Settings_Facebook" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Settings_Twitter" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Settings_Instagram" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Login_tbl">
+          <Key>
+            <PropertyRef Name="Login_ID" />
+          </Key>
+          <Property Name="Login_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Login_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Login_Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="yilmazoglugroupDBModelStoreContainer" CdmEntityContainer="yilmazoglugroupDBEntities">
+          <EntitySetMapping Name="About_tbl">
+            <EntityTypeMapping TypeName="yilmazoglugroupDBModel.About_tbl">
+              <MappingFragment StoreEntitySet="About_tbl">
+                <ScalarProperty Name="About_ID" ColumnName="About_ID" />
+                <ScalarProperty Name="About_WhoAreWe" ColumnName="About_WhoAreWe" />
+                <ScalarProperty Name="About_WhoAreWe_Two" ColumnName="About_WhoAreWe_Two" />
+                <ScalarProperty Name="About_Content" ColumnName="About_Content" />
+                <ScalarProperty Name="About_Content_Two" ColumnName="About_Content_Two" />
+                <ScalarProperty Name="About_Mission" ColumnName="About_Mission" />
+                <ScalarProperty Name="About_Mission_Two" ColumnName="About_Mission_Two" />
+                <ScalarProperty Name="About_Vision" ColumnName="About_Vision" />
+                <ScalarProperty Name="About_Vision_Two" ColumnName="About_Vision_Two" />
+                <ScalarProperty Name="About_Career" ColumnName="About_Career" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Projects_tbl">
+            <EntityTypeMapping TypeName="yilmazoglugroupDBModel.Projects_tbl">
+              <MappingFragment StoreEntitySet="Projects_tbl">
+                <ScalarProperty Name="Project_Header_Two" ColumnName="Project_Header_Two" />
+                <ScalarProperty Name="Project_Header" ColumnName="Project_Header" />
+                <ScalarProperty Name="Project_ID" ColumnName="Project_ID" />
+                <ScalarProperty Name="Project_Image" ColumnName="Project_Image" />
+                <ScalarProperty Name="Project_Content" ColumnName="Project_Content" />
+                <ScalarProperty Name="Project_Content_Two" ColumnName="Project_Content_Two" />
+                <ScalarProperty Name="Project_Summary" ColumnName="Project_Summary" />
+                <ScalarProperty Name="Project_Summary_Two" ColumnName="Project_Summary_Two" />
+                <ScalarProperty Name="Project_Statu" ColumnName="Project_Statu" />
+                <ScalarProperty Name="Project_Country" ColumnName="Project_Country" />
+                <ScalarProperty Name="Project_City" ColumnName="Project_City" />
+                <ScalarProperty Name="Project_Sector" ColumnName="Project_Sector" />
+                <ScalarProperty Name="Project_StartDate" ColumnName="Project_StartDate" />
+                <ScalarProperty Name="Project_EndDate" ColumnName="Project_EndDate" />
+                <ScalarProperty Name="Project_Situation" ColumnName="Project_Situation" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Services_tbl">
+            <EntityTypeMapping TypeName="yilmazoglugroupDBModel.Services_tbl">
+              <MappingFragment StoreEntitySet="Services_tbl">
+                <ScalarProperty Name="Service_ID" ColumnName="Service_ID" />
+                <ScalarProperty Name="Service_Image" ColumnName="Service_Image" />
+                <ScalarProperty Name="Service_Summary" ColumnName="Service_Summary" />
+                <ScalarProperty Name="Service_Summary_Two" ColumnName="Service_Summary_Two" />
+                <ScalarProperty Name="Service_Content" ColumnName="Service_Content" />
+                <ScalarProperty Name="Service_Content_Two" ColumnName="Service_Content_Two" />
+                <ScalarProperty Name="Service_Header" ColumnName="Service_Header" />
+                <ScalarProperty Name="Service_Header_Two" ColumnName="Service_Header_Two" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="News_tbl">
+            <EntityTypeMapping TypeName="yilmazoglugroupDBModel.News_tbl">
+              <MappingFragment StoreEntitySet="News_tbl">
+                <ScalarProperty Name="Blog_AddDate" ColumnName="Blog_AddDate" />
+                <ScalarProperty Name="Blog_Header_Two" ColumnName="Blog_Header_Two" />
+                <ScalarProperty Name="Blog_Header" ColumnName="Blog_Header" />
+                <ScalarProperty Name="Blog_Content_Two" ColumnName="Blog_Content_Two" />
+                <ScalarProperty Name="Blog_Content" ColumnName="Blog_Content" />
+                <ScalarProperty Name="Blog_Summary_Two" ColumnName="Blog_Summary_Two" />
+                <ScalarProperty Name="Blog_Summary" ColumnName="Blog_Summary" />
+                <ScalarProperty Name="Blog_Image" ColumnName="Blog_Image" />
+                <ScalarProperty Name="Blog_ID" ColumnName="Blog_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Brands_tbl">
+            <EntityTypeMapping TypeName="yilmazoglugroupDBModel.Brands_tbl">
+              <MappingFragment StoreEntitySet="Brands_tbl">
+                <ScalarProperty Name="Brand_Image" ColumnName="Brand_Image" />
+                <ScalarProperty Name="Brand_Content_Two" ColumnName="Brand_Content_Two" />
+                <ScalarProperty Name="Brand_Content" ColumnName="Brand_Content" />
+                <ScalarProperty Name="Brand_ID" ColumnName="Brand_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AltSlider_tbl">
+            <EntityTypeMapping TypeName="yilmazoglugroupDBModel.AltSlider_tbl">
+              <MappingFragment StoreEntitySet="AltSlider_tbl">
+                <ScalarProperty Name="AltSlider_Path" ColumnName="AltSlider_Path" />
+                <ScalarProperty Name="AltSlider_Project_ID" ColumnName="AltSlider_Project_ID" />
+                <ScalarProperty Name="AltSlider_Service_ID" ColumnName="AltSlider_Service_ID" />
+                <ScalarProperty Name="AltSlider_ID" ColumnName="AltSlider_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sliders_tbl">
+            <EntityTypeMapping TypeName="yilmazoglugroupDBModel.Sliders_tbl">
+              <MappingFragment StoreEntitySet="Sliders_tbl">
+                <ScalarProperty Name="Slider_Path" ColumnName="Slider_Path" />
+                <ScalarProperty Name="Slider_Service_ID" ColumnName="Slider_Service_ID" />
+                <ScalarProperty Name="Slider_ID" ColumnName="Slider_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Cv_tbl">
+            <EntityTypeMapping TypeName="yilmazoglugroupDBModel.Cv_tbl">
+              <MappingFragment StoreEntitySet="Cv_tbl">
+                <ScalarProperty Name="Cv_Path" ColumnName="Cv_Path" />
+                <ScalarProperty Name="Cv_ID" ColumnName="Cv_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Settings_tbl">
+            <EntityTypeMapping TypeName="yilmazoglugroupDBModel.Settings_tbl">
+              <MappingFragment StoreEntitySet="Settings_tbl">
+                <ScalarProperty Name="Settings_Instagram" ColumnName="Settings_Instagram" />
+                <ScalarProperty Name="Settings_Twitter" ColumnName="Settings_Twitter" />
+                <ScalarProperty Name="Settings_Facebook" ColumnName="Settings_Facebook" />
+                <ScalarProperty Name="Settings_Mail" ColumnName="Settings_Mail" />
+                <ScalarProperty Name="Settings_Phone_Mobile" ColumnName="Settings_Phone_Mobile" />
+                <ScalarProperty Name="Settings_Phone" ColumnName="Settings_Phone" />
+                <ScalarProperty Name="Settings_Address" ColumnName="Settings_Address" />
+                <ScalarProperty Name="Settings_ID" ColumnName="Settings_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Login_tbl">
+            <EntityTypeMapping TypeName="yilmazoglugroupDBModel.Login_tbl">
+              <MappingFragment StoreEntitySet="Login_tbl">
+                <ScalarProperty Name="Login_Password" ColumnName="Login_Password" />
+                <ScalarProperty Name="Login_Name" ColumnName="Login_Name" />
+                <ScalarProperty Name="Login_ID" ColumnName="Login_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

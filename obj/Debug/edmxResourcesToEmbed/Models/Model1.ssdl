@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="yilmazoglugroupDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="About_tbl">
+    <Key>
+      <PropertyRef Name="About_ID" />
+    </Key>
+    <Property Name="About_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="About_WhoAreWe" Type="varchar(max)" />
+    <Property Name="About_WhoAreWe_Two" Type="varchar(max)" />
+    <Property Name="About_Content" Type="varchar(max)" />
+    <Property Name="About_Content_Two" Type="varchar(max)" />
+    <Property Name="About_Mission" Type="varchar(max)" />
+    <Property Name="About_Mission_Two" Type="varchar(max)" />
+    <Property Name="About_Vision" Type="varchar(max)" />
+    <Property Name="About_Vision_Two" Type="varchar(max)" />
+    <Property Name="About_Career" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="AltSlider_tbl">
+    <Key>
+      <PropertyRef Name="AltSlider_ID" />
+    </Key>
+    <Property Name="AltSlider_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AltSlider_Service_ID" Type="int" />
+    <Property Name="AltSlider_Project_ID" Type="int" />
+    <Property Name="AltSlider_Path" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Brands_tbl">
+    <Key>
+      <PropertyRef Name="Brand_ID" />
+    </Key>
+    <Property Name="Brand_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Brand_Content" Type="varchar(max)" />
+    <Property Name="Brand_Content_Two" Type="varchar(max)" />
+    <Property Name="Brand_Image" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Cv_tbl">
+    <Key>
+      <PropertyRef Name="Cv_ID" />
+    </Key>
+    <Property Name="Cv_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Cv_Path" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Login_tbl">
+    <Key>
+      <PropertyRef Name="Login_ID" />
+    </Key>
+    <Property Name="Login_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Login_Name" Type="varchar(max)" />
+    <Property Name="Login_Password" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="News_tbl">
+    <Key>
+      <PropertyRef Name="Blog_ID" />
+    </Key>
+    <Property Name="Blog_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Blog_Image" Type="varchar(max)" />
+    <Property Name="Blog_Summary" Type="varchar(max)" />
+    <Property Name="Blog_Summary_Two" Type="varchar(max)" />
+    <Property Name="Blog_Content" Type="varchar(max)" />
+    <Property Name="Blog_Content_Two" Type="varchar(max)" />
+    <Property Name="Blog_Header" Type="varchar(max)" />
+    <Property Name="Blog_Header_Two" Type="varchar(max)" />
+    <Property Name="Blog_AddDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Projects_tbl">
+    <Key>
+      <PropertyRef Name="Project_ID" />
+    </Key>
+    <Property Name="Project_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Project_Image" Type="varchar(max)" />
+    <Property Name="Project_Content" Type="varchar(max)" />
+    <Property Name="Project_Content_Two" Type="varchar(max)" />
+    <Property Name="Project_Summary" Type="varchar(max)" />
+    <Property Name="Project_Summary_Two" Type="varchar(max)" />
+    <Property Name="Project_Statu" Type="int" />
+    <Property Name="Project_Country" Type="varchar(max)" />
+    <Property Name="Project_City" Type="varchar(max)" />
+    <Property Name="Project_Sector" Type="varchar(max)" />
+    <Property Name="Project_StartDate" Type="datetime" />
+    <Property Name="Project_EndDate" Type="datetime" />
+    <Property Name="Project_Situation" Type="int" />
+    <Property Name="Project_Header" Type="varchar(max)" />
+    <Property Name="Project_Header_Two" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Services_tbl">
+    <Key>
+      <PropertyRef Name="Service_ID" />
+    </Key>
+    <Property Name="Service_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Service_Image" Type="varchar(max)" />
+    <Property Name="Service_Summary" Type="varchar(max)" />
+    <Property Name="Service_Summary_Two" Type="varchar(max)" />
+    <Property Name="Service_Content" Type="varchar(max)" />
+    <Property Name="Service_Content_Two" Type="varchar(max)" />
+    <Property Name="Service_Header" Type="varchar(max)" />
+    <Property Name="Service_Header_Two" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Settings_tbl">
+    <Key>
+      <PropertyRef Name="Settings_ID" />
+    </Key>
+    <Property Name="Settings_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Settings_Address" Type="varchar(max)" />
+    <Property Name="Settings_Phone" Type="varchar(max)" />
+    <Property Name="Settings_Phone_Mobile" Type="varchar(max)" />
+    <Property Name="Settings_Mail" Type="varchar(max)" />
+    <Property Name="Settings_Facebook" Type="varchar(max)" />
+    <Property Name="Settings_Twitter" Type="varchar(max)" />
+    <Property Name="Settings_Instagram" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Sliders_tbl">
+    <Key>
+      <PropertyRef Name="Slider_ID" />
+    </Key>
+    <Property Name="Slider_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Slider_Service_ID" Type="int" />
+    <Property Name="Slider_Path" Type="varchar(max)" />
+  </EntityType>
+  <EntityContainer Name="yilmazoglugroupDBModelStoreContainer">
+    <EntitySet Name="About_tbl" EntityType="Self.About_tbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AltSlider_tbl" EntityType="Self.AltSlider_tbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Brands_tbl" EntityType="Self.Brands_tbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cv_tbl" EntityType="Self.Cv_tbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Login_tbl" EntityType="Self.Login_tbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="News_tbl" EntityType="Self.News_tbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Projects_tbl" EntityType="Self.Projects_tbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Services_tbl" EntityType="Self.Services_tbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Settings_tbl" EntityType="Self.Settings_tbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sliders_tbl" EntityType="Self.Sliders_tbl" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

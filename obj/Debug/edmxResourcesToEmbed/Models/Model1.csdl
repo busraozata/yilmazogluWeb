@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="yilmazoglugroupDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="About_tbl">
+    <Key>
+      <PropertyRef Name="About_ID" />
+    </Key>
+    <Property Name="About_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="About_WhoAreWe" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="About_WhoAreWe_Two" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="About_Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="About_Content_Two" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="About_Mission" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="About_Mission_Two" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="About_Vision" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="About_Vision_Two" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="About_Career" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Projects_tbl">
+    <Key>
+      <PropertyRef Name="Project_ID" />
+    </Key>
+    <Property Name="Project_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Project_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Project_Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Project_Content_Two" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Project_Summary" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Project_Summary_Two" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Project_Statu" Type="Int32" />
+    <Property Name="Project_Country" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Project_City" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Project_Sector" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Project_StartDate" Type="DateTime" Precision="3" />
+    <Property Name="Project_EndDate" Type="DateTime" Precision="3" />
+    <Property Name="Project_Situation" Type="Int32" />
+    <Property Name="Project_Header" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Project_Header_Two" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Services_tbl">
+    <Key>
+      <PropertyRef Name="Service_ID" />
+    </Key>
+    <Property Name="Service_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Service_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Service_Summary" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Service_Summary_Two" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Service_Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Service_Content_Two" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Service_Header" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Service_Header_Two" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="yilmazoglugroupDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="About_tbl" EntityType="Self.About_tbl" />
+    <EntitySet Name="Projects_tbl" EntityType="Self.Projects_tbl" />
+    <EntitySet Name="Services_tbl" EntityType="Self.Services_tbl" />
+    <EntitySet Name="News_tbl" EntityType="yilmazoglugroupDBModel.News_tbl" />
+    <EntitySet Name="Brands_tbl" EntityType="yilmazoglugroupDBModel.Brands_tbl" />
+    <EntitySet Name="AltSlider_tbl" EntityType="yilmazoglugroupDBModel.AltSlider_tbl" />
+    <EntitySet Name="Sliders_tbl" EntityType="yilmazoglugroupDBModel.Sliders_tbl" />
+    <EntitySet Name="Cv_tbl" EntityType="yilmazoglugroupDBModel.Cv_tbl" />
+    <EntitySet Name="Settings_tbl" EntityType="yilmazoglugroupDBModel.Settings_tbl" />
+    <EntitySet Name="Login_tbl" EntityType="yilmazoglugroupDBModel.Login_tbl" />
+  </EntityContainer>
+  <EntityType Name="News_tbl">
+    <Key>
+      <PropertyRef Name="Blog_ID" />
+    </Key>
+    <Property Name="Blog_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Blog_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Blog_Summary" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Blog_Summary_Two" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Blog_Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Blog_Content_Two" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Blog_Header" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Blog_Header_Two" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Blog_AddDate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Brands_tbl">
+    <Key>
+      <PropertyRef Name="Brand_ID" />
+    </Key>
+    <Property Name="Brand_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Brand_Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Brand_Content_Two" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Brand_Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="AltSlider_tbl">
+    <Key>
+      <PropertyRef Name="AltSlider_ID" />
+    </Key>
+    <Property Name="AltSlider_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AltSlider_Service_ID" Type="Int32" />
+    <Property Name="AltSlider_Project_ID" Type="Int32" />
+    <Property Name="AltSlider_Path" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Sliders_tbl">
+    <Key>
+      <PropertyRef Name="Slider_ID" />
+    </Key>
+    <Property Name="Slider_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Slider_Service_ID" Type="Int32" />
+    <Property Name="Slider_Path" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Cv_tbl">
+    <Key>
+      <PropertyRef Name="Cv_ID" />
+    </Key>
+    <Property Name="Cv_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Cv_Path" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Settings_tbl">
+    <Key>
+      <PropertyRef Name="Settings_ID" />
+    </Key>
+    <Property Name="Settings_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Settings_Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Settings_Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Settings_Phone_Mobile" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Settings_Mail" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Settings_Facebook" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Settings_Twitter" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Settings_Instagram" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Login_tbl">
+    <Key>
+      <PropertyRef Name="Login_ID" />
+    </Key>
+    <Property Name="Login_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Login_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Login_Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

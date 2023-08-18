@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css'>
+    <link rel='stylesheet' href='https://codepen.io/fancyapps/pen/Kxdwjj.css'>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Yılmazoğlu Group</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-10 col-md-9 col-6">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="./img/logo-gold.svg" class="img-fluid" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <div class="row align-items-center justify-content-end">
+                        <div class="col-xl-5 col-lg-7 col-md-7 col-9 d-lg-block d-none">
+                            <div class="language text-center">
+                                <a href="#" class="btn">EN</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-4">
+                            <div class="menu-toggle text-center show-btn">
+                                <img src="./img/menu-toggle.png" class="img-fluid" alt="menu-toggle">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="menu-area" id="target">
+        <div class="top">
+            <div class="row align-items-center">
+                <div class="col-lg-7 col-md-6 col-6">
+                    <a href="index.html">
+                        <img src="./img/logo-gold.svg" class="img-fluid logo" alt="logo">
+                    </a>
+                </div>
+                <div class="col-lg-5 col-md-6 col-6 d-flex justify-content-end align-items-center">
+                    <div class="d-lg-flex d-none align-items-center">
+                        <div class="search">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModalSearch">
+                                <img src="./img/search.png" class="img-fluid" alt="search-img">
+                            </a>
+                        </div>
+                        <div class="language">
+                            <a href="#" class="btn">EN</a>
+                        </div>
+                    </div>
+                    <div class="menu-close-toggle hide-btn">
+                        <img src="./img/close.png" class="img-fluid" alt="close-button">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="menu-navigation">
+                        <ul>
+                            <li>
+                                <a href="index.html">Anasayfa</a>
+                            </li>
+                            <li>
+                                <a href="about.html">Kurumsal</a>
+                            </li>
+                            <li>
+                                <a href="services.html">Hizmetlerimiz</a>
+                            </li>
+                            <li>
+                                <a href="projects.html">Projelerimiz</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">Haberler</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">İletişim</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 right-area d-flex justify-content-end align-items-end">
+                    <div class="contact-area">
+                        <h5>
+                            Bizi Takip Edin
+                        </h5>
+                        <p>
+                            Yılmazoğlu Group hakkında güncel haberler için bizi sosyal medya hesaplarımızdan takip edin.
+                        </p>
+                        <div class="social-media">
+                            <ul class="d-flex">
+                                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile d-lg-none d-block">
+                    <div class="row align-items-center">
+                        <div class="col-12 d-flex align-items-center">
+                            <div class="search">
+                                <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalSearch">
+                                    <img src="./img/search.png" class="img-fluid" alt="search-img">
+                                </button>
+                            </div>
+                            <div class="language">
+                                <a href="#" class="btn">ING</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade show " id="exampleModalSearch" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                
+                <div class="modal-body">
+                    <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <div class="title">
+                        <h5>Arama
+                            <span>Yap</span>
+                        </h5>
+                    </div>
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" class="form-control">
+                            <button class="btn">ARA</button>
+                        </div>
+
+                    </form>
+                </div>
+                <!--  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">GÖNDER</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <section class="sub-banner" style="background-color: black;">
+        <!-- <div class="top-menu">
+            <div class="container-fluid">
+                <ul class="d-flex align-items-center gap-2">
+                    <li><a href="index.html">Ana Sayfa <i class="fa-solid fa-right-long"></i></a></li>
+                    <li><a href="">Kurumsal</a></li>
+                </ul>
+            </div>
+        </div> -->
+        <div class="sub-banner-area d-flex align-items-end" style="background: url(./img/sub-banner.jpg) no-repeat; background-size: cover; background-position: center; ">
+            <div class="container-fluid">
+                <div class="content">
+                    <h2>Projelerimiz</h2>
+                    <div class="text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor unt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commo viverra maecenas accumsan
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news-page">
+        <div class="container-fluid">
+            <div class="title text-center">
+                <h3>PROJELER</h3>
+                <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </P>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-8">
+
+                <div class="news-list">
+                    <div class="container-fluid">
+                        <nav>
+                            <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                                <button class="nav-link " id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Tümü</button>
+                                <button class="nav-link active" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Tamamlanan Projeler</button>
+                                <button class="nav-link " id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Devam Eden Projeler</button>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 mb-5 d-flex justify-content-center">
+                                        <div class="blog-item">
+                                            <div class="img-area">
+                                                <div class="img-wrapper">
+                                                    <a href="project-detail.html">
+                                                        <img src="./img/wall-background-television-screens-used-news-studio-background.jpg" class="img-fluid " alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="item-body">
+                                                <a href="project-detail.html">
+                                                    <h4>Yılmazoğlu Rezidans</h4>
+                                                </a>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                                                <a href="project-detail.html" class="btn">Devam Et</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 mb-5 d-flex justify-content-center">
+                                        <div class="blog-item">
+                                            <div class="img-area">
+                                                <div class="img-wrapper">
+                                                    <a href="project-detail.html">
+                                                        <img src="./img/wall-background-television-screens-used-news-studio-background.jpg" class="img-fluid " alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="item-body">
+                                                <a href="project-detail.html">
+                                                    <h4>Yılmazoğlu Rezidans</h4>
+                                                </a>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                                                <a href="project-detail.html" class="btn">Devam Et</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 mb-5 d-flex justify-content-center">
+                                        <div class="blog-item">
+                                            <div class="img-area">
+                                                <div class="img-wrapper">
+                                                    <a href="project-detail.html">
+                                                        <img src="./img/wall-background-television-screens-used-news-studio-background.jpg" class="img-fluid " alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="item-body">
+                                                <a href="project-detail.html">
+                                                    <h4>Yılmazoğlu Rezidans</h4>
+                                                </a>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                                                <a href="project-detail.html" class="btn">Devam Et</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 mb-5 d-flex justify-content-center">
+                                        <div class="blog-item">
+                                            <div class="img-area">
+                                                <div class="img-wrapper">
+                                                    <a href="project-detail.html">
+                                                        <img src="./img/wall-background-television-screens-used-news-studio-background.jpg" class="img-fluid " alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="item-body">
+                                                <a href="project-detail.html">
+                                                    <h4>Yılmazoğlu Rezidans</h4>
+                                                </a>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                                                <a href="project-detail.html" class="btn">Devam Et</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 mb-5 d-flex justify-content-center">
+                                        <div class="blog-item">
+                                            <div class="img-area">
+                                                <div class="img-wrapper">
+                                                    <a href="project-detail.html">
+                                                        <img src="./img/wall-background-television-screens-used-news-studio-background.jpg" class="img-fluid " alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="item-body">
+                                                <a href="project-detail.html">
+                                                    <h4>Yılmazoğlu Rezidans</h4>
+                                                </a>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                                                <a href="project-detail.html" class="btn">Devam Et</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 mb-5 d-flex justify-content-center">
+                                        <div class="blog-item">
+                                            <div class="img-area">
+                                                <div class="img-wrapper">
+                                                    <a href="project-detail.html">
+                                                        <img src="./img/wall-background-television-screens-used-news-studio-background.jpg" class="img-fluid " alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="item-body">
+                                                <a href="project-detail.html">
+                                                    <h4>Yılmazoğlu Rezidans</h4>
+                                                </a>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                                                <a href="project-detail.html" class="btn">Devam Et</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade active show" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 mb-5 d-flex justify-content-center">
+                                        <div class="blog-item">
+                                            <div class="img-area">
+                                                <div class="img-wrapper">
+                                                    <a href="project-detail.html">
+                                                        <img src="./img/wall-background-television-screens-used-news-studio-background.jpg" class="img-fluid " alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="item-body">
+                                                <a href="project-detail.html">
+                                                    <h4>Yılmazoğlu Rezidans</h4>
+                                                </a>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                                                <a href="project-detail.html" class="btn">Devam Et</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 mb-5 d-flex justify-content-center">
+                                        <div class="blog-item">
+                                            <div class="img-area">
+                                                <div class="img-wrapper">
+                                                    <a href="project-detail.html">
+                                                        <img src="./img/wall-background-television-screens-used-news-studio-background.jpg" class="img-fluid " alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="item-body">
+                                                <a href="project-detail.html">
+                                                    <h4>Yılmazoğlu Rezidans</h4>
+                                                </a>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                                                <a href="project-detail.html" class="btn">Devam Et</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade " id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 mb-5 d-flex justify-content-center">
+                                        <div class="blog-item">
+                                            <div class="img-area">
+                                                <div class="img-wrapper">
+                                                    <a href="project-detail.html">
+                                                        <img src="./img/wall-background-television-screens-used-news-studio-background.jpg" class="img-fluid " alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="item-body">
+                                                <a href="project-detail.html">
+                                                    <h4>Yılmazoğlu Rezidans</h4>
+                                                </a>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                                                <a href="project-detail.html" class="btn">Devam Et</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 mb-5 d-flex justify-content-center">
+                                        <div class="blog-item">
+                                            <div class="img-area">
+                                                <div class="img-wrapper">
+                                                    <a href="project-detail.html">
+                                                        <img src="./img/wall-background-television-screens-used-news-studio-background.jpg" class="img-fluid " alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="item-body">
+                                                <a href="project-detail.html">
+                                                    <h4>Yılmazoğlu Rezidans</h4>
+                                                </a>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                                                <a href="project-detail.html" class="btn">Devam Et</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 mb-5 d-flex justify-content-center">
+                                        <div class="blog-item">
+                                            <div class="img-area">
+                                                <div class="img-wrapper">
+                                                    <a href="project-detail.html">
+                                                        <img src="./img/wall-background-television-screens-used-news-studio-background.jpg" class="img-fluid " alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="item-body">
+                                                <a href="project-detail.html">
+                                                    <h4>Yılmazoğlu Rezidans</h4>
+                                                </a>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                                                <a href="project-detail.html" class="btn">Devam Et</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 mb-5 d-flex justify-content-center">
+                                        <div class="blog-item">
+                                            <div class="img-area">
+                                                <div class="img-wrapper">
+                                                    <a href="project-detail.html">
+                                                        <img src="./img/wall-background-television-screens-used-news-studio-background.jpg" class="img-fluid " alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="item-body">
+                                                <a href="project-detail.html">
+                                                    <h4>Yılmazoğlu Rezidans</h4>
+                                                </a>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                                                <a href="project-detail.html" class="btn">Devam Et</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="last-blogs">
+                    <h3>Haberler</h3>
+                    <div class="swiper mySwiperDirection">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="news-item d-flex">
+                                    <div class="date d-flex justify-content-end flex-column align-items-end">
+                                        <span class="text-start w-100">
+                                            14
+                                        </span>
+                                        <span class="text-center w-100">
+                                            Nisan
+                                        </span>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">
+                                            <h5>Avrupa ve Amerika’da</h5>
+                                        </a>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <a href="#" class="btn d-flex align-items-center"> <i class="fa-solid fa-right-long"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="news-item d-flex">
+                                    <div class="date d-flex justify-content-end flex-column align-items-end">
+                                        <span class="text-start w-100">
+                                            14
+                                        </span>
+                                        <span class="text-center w-100">
+                                            Nisan
+                                        </span>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">
+                                            <h5>Avrupa ve Amerika’da</h5>
+                                        </a>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <a href="#" class="btn d-flex align-items-center"> <i class="fa-solid fa-right-long"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="news-item d-flex">
+                                    <div class="date d-flex justify-content-end flex-column align-items-end">
+                                        <span class="text-start w-100">
+                                            14
+                                        </span>
+                                        <span class="text-center w-100">
+                                            Nisan
+                                        </span>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">
+                                            <h5>Avrupa ve Amerika’da</h5>
+                                        </a>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <a href="#" class="btn d-flex align-items-center"> <i class="fa-solid fa-right-long"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="news-item d-flex">
+                                    <div class="date d-flex justify-content-end flex-column align-items-end">
+                                        <span class="text-start w-100">
+                                            14
+                                        </span>
+                                        <span class="text-center w-100">
+                                            Nisan
+                                        </span>
+                                    </div>
+                                    <div class="text">
+                                        <a href="#">
+                                            <h5>Avrupa ve Amerika’da</h5>
+                                        </a>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <a href="#" class="btn d-flex align-items-center"> <i class="fa-solid fa-right-long"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <div class="modal fade show " id="exampleModalCV" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                
+                <div class="modal-body">
+                    <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <div class="title">
+                        <h5>CV
+                            <span>gonder</span>
+                        </h5>
+                    </div>
+                    <form action="">
+                        <div class="form-group">
+                            <input type="file" class="form-control">
+                            <button class="btn">GÖNDER</button>
+                        </div>
+
+                    </form>
+                </div>
+                <!--  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">GÖNDER</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <section class="career sub-career">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center d-lg-block d-none">
+                    <h2 class="first-title">YILMAZOĞLU <span>Kariyer</span></h2>
+                </div>
+                <div class="col-lg-6">
+                    <div class="content">
+                        <h2>YILMAZOĞLU <span>Kariyer</span> </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum debitis nisi quas architecto exercitationem deleniti aspernatur modi magnam illum aut eos esse inventore, sunt beatae excepturi autem provident iste libero voluptate in quia officia! Laudantium reiciendis libero laborum eius necessitatibus! Delectus ea sunt neque, exercitationem repellat unde ad vel quasi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem corporis nisi ipsam soluta, aut animi doloribus reprehenderit debitis deserunt, quia veniam ex quod officia enim nihil, reiciendis officiis illum blanditiis earum eaque quam aliquid dolore atque delectus. In, dolores vel?</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 right-area">
+                    <div class="info">
+                        <div class="img-wrapper">
+                            <img src="./img/is-basvurusu.jpg" class="img-fluid w-100" alt="iş başvurusu">
+                        </div>
+                        <div class="text-area">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit..Lorem ipsum dolor sit amet, consectetur adipiscing elit..Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+                            </p>
+                            <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalCV"><span>CV</span> GÖNDER</button>
+                        </div>
+
+
+                    </div>
+                    <div class="slider-backdrop">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="space">
+        <div class="container">
+            <div class="row d-lg-flex ">
+                <div class="col-lg-4 col-md-4 ">
+                    <div class="box">
+                        <a href="#" class="title">Markalarımız</a>
+                        <span class="d-lg-block d-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, vero!</span>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8">
+                    <div class="swiper mySwiperSSSArea">
+
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="sss-item">
+
+                                    <div class="question mb-3 d-flex align-items-center justify-content-center">
+                                        <img src="./img/massai-men.png" class="img-fluid" alt="company-logo">
+                                    </div>
+                                    <div class="text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+                                            suspendisse ultrices gravida. Risus commodo viverra maecenas
+                                            accumsan lacus vel facilisis. Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit,
+                                        </p>
+                                        <a href="">Devamını Gör <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sss-item">
+
+                                    <div class="question mb-3 d-flex align-items-center justify-content-center">
+                                        <img src="./img/massai-women.png" class="img-fluid" alt="company-logo">
+                                    </div>
+                                    <div class="text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+                                            suspendisse ultrices gravida. Risus commodo viverra maecenas
+                                            accumsan lacus vel facilisis. Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit,
+                                        </p>
+                                        <a href="">Devamını Gör <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sss-item">
+
+                                    <div class="question mb-3 d-flex align-items-center justify-content-center">
+                                        <img src="./img/radem-hayvancılık.png" class="img-fluid" alt="company-logo">
+                                    </div>
+                                    <div class="text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+                                            suspendisse ultrices gravida. Risus commodo viverra maecenas
+                                            accumsan lacus vel facilisis. Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit,
+                                        </p>
+                                        <a href="">Devamını Gör <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sss-item">
+
+                                    <div class="question mb-3 d-flex align-items-center justify-content-center">
+                                        <img src="./img/radem-motors.png" class="img-fluid" alt="company-logo">
+                                    </div>
+                                    <div class="text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+                                            suspendisse ultrices gravida. Risus commodo viverra maecenas
+                                            accumsan lacus vel facilisis. Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit,
+                                        </p>
+                                        <a href="">Devamını Gör <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sss-item">
+
+                                    <div class="question mb-3 d-flex align-items-center justify-content-center">
+                                        <img src="./img/radem-park.png" class="img-fluid" alt="company-logo">
+                                    </div>
+                                    <div class="text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+                                            suspendisse ultrices gravida. Risus commodo viverra maecenas
+                                            accumsan lacus vel facilisis. Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit,
+                                        </p>
+                                        <a href="">Devamını Gör <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sss-item">
+
+                                    <div class="question mb-3 d-flex align-items-center justify-content-center">
+                                        <img src="./img/radem-turizm.png" class="img-fluid" alt="company-logo">
+                                    </div>
+                                    <div class="text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+                                            suspendisse ultrices gravida. Risus commodo viverra maecenas
+                                            accumsan lacus vel facilisis. Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit,
+                                        </p>
+                                        <a href="">Devamını Gör <i class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6 d-flex flex-column  justify-content-center">
+                        <div class="img-wrapper">
+                            <a href="">
+                                <img src="./img/logo-blue.svg" class="img-fluid" alt="logo">
+                            </a>
+                        </div>
+                        <div class="group-campany">
+                            <div class="follow-us">
+                                <h5>
+                                    Bizi Takip Edin
+                                </h5>
+                                <p>
+                                    Yılmazoğlu Group hakkında güncel haberler için bizi sosyal medya hesaplarımızdan takip edin.
+                                </p>
+                                <div class="social-media">
+                                    <ul class="d-flex ">
+                                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-xl-3 col-lg-6 d-flex justify-content-center align-items-center">
+                        <div class="w-100 we-contact">
+                            <h5>
+                                Bizimle İletişime Geçin
+                            </h5>
+                            <div class="contact-area">
+                                <ul>
+                                    <li class="d-flex ">
+                                        <i class="fa-solid fa-location-dot mt-1"></i>
+                                        <p> Zeytinlik Mah. Fişekhane Cad. No: 50 Bakırköy İstanbul / TÜRKİYE </p>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fa-solid fa-mobile"></i>
+                                            <span>
+                                                +90 (212) 461 07 95
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fa-solid fa-fax"></i>
+                                            <span>
+                                                +90 (212) 461 07 79
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fa-solid fa-envelope"></i>
+                                            <span>
+                                                info@yilmazoglugroup.com
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5">
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.563003221358!2d28.855989376488036!3d41.03481561778967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa52d3c86cc77%3A0x26c21e934f5505a1!2zWcSxbG1hem_En2x1IEhhZnJpeWF0!5e0!3m2!1str!2str!4v1690982008911!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <span>Copyright © 2023 Yılmazoğlu Group All Rights Reserved.</span>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-end">
+                        <a href="https://www.wucize.com/" target="_blank">
+                            <img src="./img/wucize-footer.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
